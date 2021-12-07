@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Prediction with Deployment</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2 class='container-heading'><span class="heading_font">House Price Prediction with Deployment</span></h2>
+    </div>
+
+    <div class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <h3>Bedrooms</h3>
+            <input id="first" name="Bed" placeholder="No of Bedrooms" required="required">
+            <br>
+            <h3>Bathrooms</h3>
+            <input id="second" name="Bath" placeholder="No of Bathrooms" required="required">
+            <br>
+            <h3>sqft_living</h3>
+            <input id="third" name="Sqft" placeholder="Living are in SQFT" required="required">
+            <br>
+            <h3>sqft_lot</h3>
+            <input id="fourth" name="Sqlot" placeholder="lotsize in SQRT" required="required">
+            <br>
+            <h3>Floors</h3>
+            <input id="fifth" name="Floors" placeholder="No of Floors" required="required">
+            <br>
+            <h3>Waterfront</h3>
+            <input id="sixth" name="Waterfront" placeholder="Waterfront" required="required">
+            <br>
+            <h3>View</h3>
+            <input id="seventh" name="View" placeholder="View of House" required="required">
+            <br>
+            <h3>Condition</h3>
+            <input id="eight" name="Condition" placeholder="Condition" required="required">
+            <br>
+            <h3>Sqft Above</h3>
+            <input id="ninth" name="Sqabove" placeholder="Above SQFT" required="required">
+            <br>
+	    <h3>Sqft Basement</h3>
+            <input id="ninth" name="Sqbase" placeholder="Basement in SQFT" required="required">
+            <br>
+            <h3>Year Built</h3>
+            <input id="ninth" name="Yearbuilt" placeholder="House built year" required="required">
+            <br>
+            <h3>Year Renovate</h3>
+            <input id="ninth" name="Yearrenovate" placeholder="House renovate year" required="required">
+            <br>
+	    <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+        </form>
+    </div>
+
+
+
+
+<style>
+
+/* Background Image */
+body
+{
+background-image:url("https://raw.githubusercontent.com/pavan330/House-Price-Prediction-with-Deployment/main/architecture.jpg");
+height: 100%;
+
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+/* Color */
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #black;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+
+
+/* Box */
+        #first 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second 
+	{
+            border-radius: 14px;
+            height: 25px;
+	    width:500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #eight 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #ninth 
+	{
+            border-radius: 14px;
+            height: 25px;
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        
+
+        
+
+
+
+/* Submit Button */
+#sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+
+
+</body>
+
+</html>

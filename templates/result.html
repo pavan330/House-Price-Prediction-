@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction with Deployment </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 class='container-heading'><span class="heading_font">House Price Prediction with Deployment</span></h2>
+
+        <br><br><br>
+
+<!-- Result -->
+		<div class="results">
+			{{prediction_text}}
+				
+		</div>
+        </form>
+
+    </div>
+<style>
+body
+{
+background-image:url("https://raw.githubusercontent.com/pavan330/House-Price-Prediction-with-Deployment/main/recife.jpg");
+height: 100%;
+}
+/* Color */
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #black;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	font-weight: normal;
+}
