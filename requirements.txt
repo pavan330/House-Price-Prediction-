@@ -13,3 +13,4 @@ joblib==0.16.0
 scipy==1.5.4
 sklearn==0.0
 gunicorn==19.9.0
+xgboost==1.5.1
